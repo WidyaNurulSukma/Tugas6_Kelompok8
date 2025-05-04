@@ -1,0 +1,50 @@
+@layout('layouts/main')
+
+@section('content')
+  <div class="row mb-4">
+    <div class="col-md-8">
+      <h1>Daftar Buku</h1>
+    </div>
+    <div class="col-md-4 text-end">
+      <a href="/buku/create" class="btn btn-primary">
+        <i class="bi bi-plus-circle"></i> Tambah Buku Baru
+      </a>
+    </div>
+  </div>
+
+  <div class="row">
+    @if(bukus.length > 0)
+      @each(buku in bukus)
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-header bg-dark text-white">
+              <h5 class="card-title mb-0">{{ buku.judul }}</h5>
+            </div>
+            <div class="card-body">
+              <h6 class="card-subtitle mb-2 text-muted">Penulis: {{ buku.penulis }}</h6>
+              <p class="card-text">
+                <strong>Tahun Terbit:</strong> {{ buku.tahun_terbit }}
+              </p>
+              <p class="card-text">
+                @if(buku.deskripsi)
+                  {{ buku.deskripsi.length > 100 ? buku.deskripsi.substring(0, 100) + '...' : buku.deskripsi }}
+                @else
+                  <em>Tidak ada deskripsi</em>
+                @endif
+              </p>
+            </div>
+            <div class="card-footer text-muted">
+              Ditambahkan pada: {{ buku.createdAt.toFormat('dd/MM/yyyy HH:mm') }}
+            </div>
+          </div>
+        </div>
+      @end
+    @else
+      <div class="col-12">
+        <div class="alert alert-info">
+          Belum ada buku yang ditambahkan. <a href="/buku/create" class="alert-link">Tambahkan buku baru</a> sekarang!
+        </div>
+      </div>
+    @endif
+  </div>
+@endsection

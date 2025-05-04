@@ -1,0 +1,63 @@
+@layout('layouts/main')
+
+@section('content')
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <div class="card">
+        <div class="card-header bg-primary text-white">
+          <h3 class="mb-0">Tambah Buku Baru</h3>
+        </div>
+        <div class="card-body">
+          @if(flashMessages.has('errors'))
+            <div class="alert alert-danger">
+              <h5 class="alert-heading">Terjadi Kesalahan:</h5>
+              <ul class="mb-0">
+                @each(error in flashMessages.get('errors'))
+                  <li>{{ error }}</li>
+                @end
+              </ul>
+            </div>
+          @endif
+
+          @if(flashMessages.has('success'))
+            <div class="alert alert-success">
+                {{ flashMessages.get('success') }}
+            </div>
+            @endif
+
+            
+          <form action="/buku" method="POST">
+              {{-- CSRF token --}}
+                
+            
+            <div class="mb-3">
+              <label for="judul" class="form-label">Judul Buku</label>
+              <input type="text" class="form-control" id="judul" name="judul" value="{{ flashMessages.get('judul') || '' }}" required>
+            </div>
+            
+            <div class="mb-3">
+              <label for="penulis" class="form-label">Penulis</label>
+              <input type="text" class="form-control" id="penulis" name="penulis" value="{{ flashMessages.get('penulis') || '' }}" required>
+            </div>
+            
+            <div class="mb-3">
+              <label for="tahun_terbit" class="form-label">Tahun Terbit</label>
+              <input type="number" class="form-control" id="tahun_terbit" name="tahun_terbit" 
+                     value="{{ flashMessages.get('tahun_terbit') || '' }}" required min="1900" max="2023">
+            </div>
+            
+            <div class="mb-3">
+              <label for="deskripsi" class="form-label">Deskripsi</label>
+              <textarea class="form-control" id="deskripsi" name="deskripsi" rows="4">{{ flashMessages.get('deskripsi') || '' }}</textarea>
+            </div>
+            
+            <div class="d-grid gap-2">
+              <button type="submit" class="btn btn-primary">Simpan Buku</button>
+              <a href="/buku" class="btn btn-secondary">Kembali ke Daftar</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+@endsection
