@@ -1,3 +1,8 @@
+## Anggota Kelompok
+Pryta Rosela (2208107010046)
+Widya Nurul Sukma (2208107010054)
+Mila Lestari (2208107010002)
+
 # Aplikasi Daftar Buku dengan AdonisJS
 
 Aplikasi web sederhana untuk mengelola daftar buku menggunakan AdonisJS framework. Aplikasi ini dibuat untuk memenuhi Tugas 7 dengan implementasi form, database, tampilan data, dan flash message.
