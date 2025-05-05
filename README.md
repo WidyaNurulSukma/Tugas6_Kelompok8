@@ -118,9 +118,9 @@ Kontribusi selalu disambut! Jika Anda menemukan bug atau ingin menambahkan fitur
 5. Buat Pull Request
 
 ## Tampilan Website
-![WhatsApp Image 2025-05-05 at 16 33 10_2fca33b1](https://github.com/user-attachments/assets/f9087432-2dd5-4bde-b5e3-d1dfbe9ce63f)
+![image](https://github.com/user-attachments/assets/9b764902-099f-4347-a505-d62e26ed2c9a)
+![image](https://github.com/user-attachments/assets/c50d7990-c7e2-4458-8c6a-f612ebe11d71)
 
-![WhatsApp Image 2025-05-05 at 16 36 27_91354b79](https://github.com/user-attachments/assets/7d491ae6-bdd7-408f-b475-6e8d19513f20)
 
 ## Lisensi
 
