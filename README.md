@@ -1,7 +1,7 @@
 ## Anggota Kelompok
-Pryta Rosela (2208107010046)
-Widya Nurul Sukma (2208107010054)
-Mila Lestari (2208107010002)
+- Pryta Rosela (2208107010046)
+- Widya Nurul Sukma (2208107010054)
+- Mila Lestari (2208107010002)
 
 # Aplikasi Daftar Buku dengan AdonisJS
 
