@@ -112,15 +112,6 @@ daftar-buku/
 - Flash message ditampilkan setelah berhasil menyimpan data
 - Redirect ke halaman index setelah form berhasil disubmit
 
-## Kontribusi
-
-Kontribusi selalu disambut! Jika Anda menemukan bug atau ingin menambahkan fitur baru:
-
-1. Fork repositori ini
-2. Buat branch baru (`git checkout -b fitur-baru`)
-3. Commit perubahan Anda (`git commit -m 'Menambahkan fitur baru'`)
-4. Push ke branch (`git push origin fitur-baru`)
-5. Buat Pull Request
 
 ## Tampilan Website
 ![image](https://github.com/user-attachments/assets/9b764902-099f-4347-a505-d62e26ed2c9a)
