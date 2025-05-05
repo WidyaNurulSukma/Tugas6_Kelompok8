@@ -32,8 +32,8 @@ Aplikasi web sederhana untuk mengelola daftar buku menggunakan AdonisJS framewor
 
 1. Clone repository ini
    ```bash
-   git clone https://github.com/username/daftar-buku-adonisjs.git
-   cd daftar-buku-adonisjs
+   git clone https://github.com/WidyaNurulSukma/Tugas6_Kelompok8.git
+   cd Tugas6_Kelompok8
    ```
 
 2. Install dependensi
